@@ -23,9 +23,43 @@ header{
     height: 140px;
 }
 
-header ul a{
+header div div a{
     color: white;
     text-decoration: none;
+    background-color: burlywood;
+    padding: 5px 10px;
+    border-radius: 25px;
+    transition: 0.2s;
+
+}
+
+header div div{
+    margin-top: 5px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+header div div a{
+    color: white;
+    text-decoration: none;
+    background-color: burlywood;
+    padding: 5px 10px;
+    border-radius: 25px;
+    transition: 0.2s;
+    
+}
+
+header div div a:hover{
+    color: white;
+    text-decoration: none;
+    background-color: burlywood;
+    padding: 5px 15px;
+    border-radius: 25px;
+    transition: 0.2s;
+    
 }
 
 a{
@@ -33,31 +67,23 @@ a{
     text-decoration: none;
 }
 
-ul{
-    margin-top: 5px;
-    display: flex;
-    gap: 5px;
-    justify-content: center;
-    list-style: none;
-}
 
 li{
     list-style: none;
-    background-color: burlywood;
-    padding: 5px 10px;
-    border-radius: 25px;
-    transition: 0.2s;
 }
 
-li:hover{
-    list-style: none;
-    margin-left: 10px;
-    margin-right: 10px;
-    transition: 0.2s;
-    background-color: burlywood;
-    padding: 5px 10px;
-    border-radius: 25px;
+
+.btn{
+    transition: 0.5s;
 }
+
+.btn:hover{
+    padding-right: 15px;
+    padding-left: 15px;
+    transition: 0.5s;
+}
+
+
 
 .containerCardCarousel{
     align-items: center;
