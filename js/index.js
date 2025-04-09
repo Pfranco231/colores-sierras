@@ -1,4 +1,13 @@
 import placeslapaz from "../json/lapaz.js"
+import placesbrochero from "../json/brochero.js"
+import placesrabonas from "../json/lasrabonas.js"
+import placeslomabola from "../json/lomabola.js"
+import placesmerlo from "../json/merlo.js"
+import placesclavero from "../json/minaclavero.js"
+import placesnono from "../json/nono.js"
+import placespozos from "../json/pozos.js"
+import placesrosas from "../json/rosas.js"
+import placessjavier from "../json/sanjavier.js"
 
 
 let main = document.getElementById('main')
@@ -18,6 +27,21 @@ function laPaz() {
     console.log("Ejecutando la paz")
     main.innerHTML = " "
     console.log(placeslapaz)
+
+
+    // Ejecucion de div y Cards
+    
+    const cards = placeslapaz.map(item => {
+        const divCard = document.createElement('div');
+        let h1 = document.createElement("h1")
+        h1.innerText = item.name;
+        divCard.appendChild(h1)
+        main.appendChild(divCard)
+        
+        return divCard;
+    })
+
+    main.append(...cards)
     
 }
 
