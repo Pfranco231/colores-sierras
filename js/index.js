@@ -26,22 +26,54 @@ let onplaces10 = document.getElementById('onplaces10')
 function laPaz() {
     console.log("Ejecutando la paz")
     main.innerHTML = " "
-    console.log(placeslapaz)
+    const divContainer = document.createElement('div')
+    divContainer.style.display = 'flex';
+    divContainer.style.justifyContent = 'center';
+    divContainer.style.gap = '15px';
+
 
 
     // Ejecucion de div y Cards
     
     const cards = placeslapaz.map(item => {
         const divCard = document.createElement('div');
-        let h1 = document.createElement("h1")
-        h1.innerText = item.name;
-        divCard.appendChild(h1)
-        main.appendChild(divCard)
+        divCard.className = 'card';
+        divCard.style.height = '470px';
+        divCard.style.width = '18rem';
+        divCard.style.backgroundColor = '#FFFFFF';
+        divCard.style.borderRadius = '15px';
+        
+        const img = document.createElement('img');
+        img.setAttribute("loading", "lazy");
+        img.src = item.img_1;
+        divCard.appendChild(img);
+
+        const divContent = document.createElement('div')
+        divContent.className = 'card-body';
+        divCard.appendChild(divContent)
+
+        const cardTitle = document.createElement('h5')
+        cardTitle.className = 'card-title';
+        cardTitle.innerText = item.name;
+        divContent.appendChild(cardTitle)
+
+        const cardDesp = document.createElement('p')
+        cardDesp.className = 'card-text';
+        cardDesp.innerText = item.desp;
+        divContent.appendChild(cardDesp)
+
+        const cardA = document.createElement('a')
+        cardA.classList += 'btn';
+        cardA.classList += 'btn-primary';
+        cardA.href = '#';
+        cardA.innerText = "Ver mas";
+        divContent.appendChild(cardA)
         
         return divCard;
     })
 
-    main.append(...cards)
+    divContainer.append(...cards)
+    main.appendChild(divContainer)
     
 }
 
