@@ -22,12 +22,12 @@ let onplaces8 = document.getElementById('onplaces8')
 let onplaces9 = document.getElementById('onplaces9')
 let onplaces10 = document.getElementById('onplaces10')
 
-
-function laPaz() {
+onplaces1.addEventListener("click",()=>{
     console.log("Ejecutando la paz")
     main.innerHTML = " "
     const divContainer = document.createElement('div')
     divContainer.style.display = 'flex';
+    divContainer.style.marginTop = '20px';
     divContainer.style.justifyContent = 'center';
     divContainer.style.gap = '15px';
 
@@ -38,13 +38,14 @@ function laPaz() {
     const cards = placeslapaz.map(item => {
         const divCard = document.createElement('div');
         divCard.className = 'card';
-        divCard.style.height = '470px';
+        divCard.style.height = '370px';
         divCard.style.width = '18rem';
         divCard.style.backgroundColor = '#FFFFFF';
         divCard.style.borderRadius = '15px';
         
         const img = document.createElement('img');
         img.setAttribute("loading", "lazy");
+        img.borderRadius = '10px';
         img.src = item.img_1;
         divCard.appendChild(img);
 
@@ -63,8 +64,63 @@ function laPaz() {
         divContent.appendChild(cardDesp)
 
         const cardA = document.createElement('a')
-        cardA.classList += 'btn';
-        cardA.classList += 'btn-primary';
+        cardA.classList = 'btn btn-primary';
+        cardA.style.border = 'none';
+        cardA.href = '#';
+        cardA.innerText = "Ver mas";
+        divContent.appendChild(cardA)
+        
+        return divCard;
+    })
+
+    divContainer.append(...cards)
+    main.appendChild(divContainer)
+})
+
+onplaces2.addEventListener("click",()=>{
+    console.log("Ejecutando loma bola")
+    main.innerHTML = " "
+    const divContainer = document.createElement('div')
+    divContainer.style.display = 'flex';
+    divContainer.style.marginTop = '20px';
+    divContainer.style.justifyContent = 'center';
+    divContainer.style.gap = '15px';
+
+
+
+    // Ejecucion de div y Cards
+    
+    const cards = placeslomabola.map(item => {
+        const divCard = document.createElement('div');
+        divCard.className = 'card';
+        divCard.style.height = '370px';
+        divCard.style.width = '18rem';
+        divCard.style.backgroundColor = '#FFFFFF';
+        divCard.style.borderRadius = '15px';
+        
+        const img = document.createElement('img');
+        img.setAttribute("loading", "lazy");
+        img.borderRadius = '10px';
+        img.src = item.img_1;
+        divCard.appendChild(img);
+
+        const divContent = document.createElement('div')
+        divContent.className = 'card-body';
+        divCard.appendChild(divContent)
+
+        const cardTitle = document.createElement('h5')
+        cardTitle.className = 'card-title';
+        cardTitle.innerText = item.name;
+        divContent.appendChild(cardTitle)
+
+        const cardDesp = document.createElement('p')
+        cardDesp.className = 'card-text';
+        cardDesp.innerText = item.desp;
+        divContent.appendChild(cardDesp)
+
+        const cardA = document.createElement('a')
+        cardA.classList = 'btn btn-primary';
+        cardA.style.border = 'none';
         cardA.href = '#';
         cardA.innerText = "Ver mas";
         divContent.appendChild(cardA)
@@ -75,108 +131,461 @@ function laPaz() {
     divContainer.append(...cards)
     main.appendChild(divContainer)
     
-}
-
-function lomaBola() {
-    console.log("Ejecutando loma bola")
-    main.innerHTML = " "
-    console.log(placeslapaz)
-    
-}
-
-function merlo() {
-    console.log("Ejecutando merlo")
-    main.innerHTML = " "
-    console.log(placeslapaz)
-    
-}
-
-function sanJavier() {
-    console.log("Ejecutando san javier")
-    main.innerHTML = " "
-    console.log(placeslapaz)
-    
-}
-
-function rosas() {
-    console.log("Ejecutando Rosas")
-    main.innerHTML = " "
-    console.log(placeslapaz)
-    
-}
-
-function pozos() {
-    console.log("Ejecutando pozos")
-    main.innerHTML = " "
-    console.log(placeslapaz)
-    
-}
-
-function nono() {
-    console.log("Ejecutando nono")
-    main.innerHTML = " "
-    console.log(placeslapaz)
-    
-}
-
-function lasRabonas() {
-    console.log("Ejecutando las rabonas")
-    main.innerHTML = " "
-    console.log(placeslapaz)
-    
-}
-
-function minaClavero() {
-    console.log("Ejecutando mina clavero")
-    main.innerHTML = " "
-    console.log(placeslapaz)
-    
-}
-
-function brochero() {
-    console.log("Ejecutando brochero")
-    main.innerHTML = " "
-    console.log(placeslapaz)
-    
-}
-
-onplaces1.addEventListener("click",()=>{
-    laPaz();
-})
-
-onplaces2.addEventListener("click",()=>{
-    lomaBola();
 })
 
 onplaces3.addEventListener("click",()=>{
-    merlo();
+    console.log("Ejecutando merlo")
+    main.innerHTML = " "
+    const divContainer = document.createElement('div')
+    divContainer.style.display = 'flex';
+    divContainer.style.marginTop = '20px';
+    divContainer.style.justifyContent = 'center';
+    divContainer.style.gap = '15px';
+
+
+
+    // Ejecucion de div y Cards
+    
+    const cards = placesmerlo.map(item => {
+        const divCard = document.createElement('div');
+        divCard.className = 'card';
+        divCard.style.height = '370px';
+        divCard.style.width = '18rem';
+        divCard.style.backgroundColor = '#FFFFFF';
+        divCard.style.borderRadius = '15px';
+        
+        const img = document.createElement('img');
+        img.setAttribute("loading", "lazy");
+        img.borderRadius = '10px';
+        img.src = item.img_1;
+        divCard.appendChild(img);
+
+        const divContent = document.createElement('div')
+        divContent.className = 'card-body';
+        divCard.appendChild(divContent)
+
+        const cardTitle = document.createElement('h5')
+        cardTitle.className = 'card-title';
+        cardTitle.innerText = item.name;
+        divContent.appendChild(cardTitle)
+
+        const cardDesp = document.createElement('p')
+        cardDesp.className = 'card-text';
+        cardDesp.innerText = item.desp;
+        divContent.appendChild(cardDesp)
+
+        const cardA = document.createElement('a')
+        cardA.classList = 'btn btn-primary';
+        cardA.style.border = 'none';
+        cardA.href = '#';
+        cardA.innerText = "Ver mas";
+        divContent.appendChild(cardA)
+        
+        return divCard;
+    })
+
+    divContainer.append(...cards)
+    main.appendChild(divContainer)
+    
+    
 })
 
 onplaces4.addEventListener("click",()=>{
-    sanJavier();
+    console.log("Ejecutando san javier")
+    main.innerHTML = " "
+    const divContainer = document.createElement('div')
+    divContainer.style.display = 'flex';
+    divContainer.style.marginTop = '20px';
+    divContainer.style.justifyContent = 'center';
+    divContainer.style.gap = '15px';
+
+
+
+    // Ejecucion de div y Cards
+    
+    const cards = placessjavier.map(item => {
+        const divCard = document.createElement('div');
+        divCard.className = 'card';
+        divCard.style.height = '370px';
+        divCard.style.width = '18rem';
+        divCard.style.backgroundColor = '#FFFFFF';
+        divCard.style.borderRadius = '15px';
+        
+        const img = document.createElement('img');
+        img.setAttribute("loading", "lazy");
+        img.borderRadius = '10px';
+        img.src = item.img_1;
+        divCard.appendChild(img);
+
+        const divContent = document.createElement('div')
+        divContent.className = 'card-body';
+        divCard.appendChild(divContent)
+
+        const cardTitle = document.createElement('h5')
+        cardTitle.className = 'card-title';
+        cardTitle.innerText = item.name;
+        divContent.appendChild(cardTitle)
+
+        const cardDesp = document.createElement('p')
+        cardDesp.className = 'card-text';
+        cardDesp.innerText = item.desp;
+        divContent.appendChild(cardDesp)
+
+        const cardA = document.createElement('a')
+        cardA.classList = 'btn btn-primary';
+        cardA.style.border = 'none';
+        cardA.href = '#';
+        cardA.innerText = "Ver mas";
+        divContent.appendChild(cardA)
+        
+        return divCard;
+    })
+
+    divContainer.append(...cards)
+    main.appendChild(divContainer)
+    
+    
 })
 
 onplaces5.addEventListener("click",()=>{
-    rosas();
+    console.log("Ejecutando Rosas")
+    main.innerHTML = " "
+    const divContainer = document.createElement('div')
+    divContainer.style.display = 'flex';
+    divContainer.style.marginTop = '20px';
+    divContainer.style.justifyContent = 'center';
+    divContainer.style.gap = '15px';
+
+
+
+    // Ejecucion de div y Cards
+    
+    const cards = placesrosas.map(item => {
+        const divCard = document.createElement('div');
+        divCard.className = 'card';
+        divCard.style.height = '370px';
+        divCard.style.width = '18rem';
+        divCard.style.backgroundColor = '#FFFFFF';
+        divCard.style.borderRadius = '15px';
+        
+        const img = document.createElement('img');
+        img.setAttribute("loading", "lazy");
+        img.borderRadius = '10px';
+        img.src = item.img_1;
+        divCard.appendChild(img);
+
+        const divContent = document.createElement('div')
+        divContent.className = 'card-body';
+        divCard.appendChild(divContent)
+
+        const cardTitle = document.createElement('h5')
+        cardTitle.className = 'card-title';
+        cardTitle.innerText = item.name;
+        divContent.appendChild(cardTitle)
+
+        const cardDesp = document.createElement('p')
+        cardDesp.className = 'card-text';
+        cardDesp.innerText = item.desp;
+        divContent.appendChild(cardDesp)
+
+        const cardA = document.createElement('a')
+        cardA.classList = 'btn btn-primary';
+        cardA.style.border = 'none';
+        cardA.href = '#';
+        cardA.innerText = "Ver mas";
+        divContent.appendChild(cardA)
+        
+        return divCard;
+    })
+
+    divContainer.append(...cards)
+    main.appendChild(divContainer)
+    
+    
 })
 
 onplaces6.addEventListener("click",()=>{
-    pozos();
+    console.log("Ejecutando pozos")
+    main.innerHTML = " "
+    const divContainer = document.createElement('div')
+    divContainer.style.display = 'flex';
+    divContainer.style.marginTop = '20px';
+    divContainer.style.justifyContent = 'center';
+    divContainer.style.gap = '15px';
+
+
+
+    // Ejecucion de div y Cards
+    
+    const cards = placespozos.map(item => {
+        const divCard = document.createElement('div');
+        divCard.className = 'card';
+        divCard.style.height = '370px';
+        divCard.style.width = '18rem';
+        divCard.style.backgroundColor = '#FFFFFF';
+        divCard.style.borderRadius = '15px';
+        
+        const img = document.createElement('img');
+        img.setAttribute("loading", "lazy");
+        img.borderRadius = '10px';
+        img.src = item.img_1;
+        divCard.appendChild(img);
+
+        const divContent = document.createElement('div')
+        divContent.className = 'card-body';
+        divCard.appendChild(divContent)
+
+        const cardTitle = document.createElement('h5')
+        cardTitle.className = 'card-title';
+        cardTitle.innerText = item.name;
+        divContent.appendChild(cardTitle)
+
+        const cardDesp = document.createElement('p')
+        cardDesp.className = 'card-text';
+        cardDesp.innerText = item.desp;
+        divContent.appendChild(cardDesp)
+
+        const cardA = document.createElement('a')
+        cardA.classList = 'btn btn-primary';
+        cardA.style.border = 'none';
+        cardA.href = '#';
+        cardA.innerText = "Ver mas";
+        divContent.appendChild(cardA)
+        
+        return divCard;
+    })
+
+    divContainer.append(...cards)
+    main.appendChild(divContainer)
+    
+    
 })
 
 onplaces7.addEventListener("click",()=>{
-    nono();
+    console.log("Ejecutando nono")
+    main.innerHTML = " "
+    const divContainer = document.createElement('div')
+    divContainer.style.display = 'flex';
+    divContainer.style.marginTop = '20px';
+    divContainer.style.justifyContent = 'center';
+    divContainer.style.gap = '15px';
+
+
+
+    // Ejecucion de div y Cards
+    
+    const cards = placesnono.map(item => {
+        const divCard = document.createElement('div');
+        divCard.className = 'card';
+        divCard.style.height = '370px';
+        divCard.style.width = '18rem';
+        divCard.style.backgroundColor = '#FFFFFF';
+        divCard.style.borderRadius = '15px';
+        
+        const img = document.createElement('img');
+        img.setAttribute("loading", "lazy");
+        img.borderRadius = '10px';
+        img.src = item.img_1;
+        divCard.appendChild(img);
+
+        const divContent = document.createElement('div')
+        divContent.className = 'card-body';
+        divCard.appendChild(divContent)
+
+        const cardTitle = document.createElement('h5')
+        cardTitle.className = 'card-title';
+        cardTitle.innerText = item.name;
+        divContent.appendChild(cardTitle)
+
+        const cardDesp = document.createElement('p')
+        cardDesp.className = 'card-text';
+        cardDesp.innerText = item.desp;
+        divContent.appendChild(cardDesp)
+
+        const cardA = document.createElement('a')
+        cardA.classList = 'btn btn-primary';
+        cardA.style.border = 'none';
+        cardA.href = '#';
+        cardA.innerText = "Ver mas";
+        divContent.appendChild(cardA)
+        
+        return divCard;
+    })
+
+    divContainer.append(...cards)
+    main.appendChild(divContainer)
+    
+    
 })
 
 onplaces8.addEventListener("click",()=>{
-    lasRabonas();
+    console.log("Ejecutando las rabonas")
+    main.innerHTML = " "
+    const divContainer = document.createElement('div')
+    divContainer.style.display = 'flex';
+    divContainer.style.marginTop = '20px';
+    divContainer.style.justifyContent = 'center';
+    divContainer.style.gap = '15px';
+
+
+
+    // Ejecucion de div y Cards
+    
+    const cards = placesrabonas.map(item => {
+        const divCard = document.createElement('div');
+        divCard.className = 'card';
+        divCard.style.height = '370px';
+        divCard.style.width = '18rem';
+        divCard.style.backgroundColor = '#FFFFFF';
+        divCard.style.borderRadius = '15px';
+        
+        const img = document.createElement('img');
+        img.setAttribute("loading", "lazy");
+        img.borderRadius = '10px';
+        img.src = item.img_1;
+        divCard.appendChild(img);
+
+        const divContent = document.createElement('div')
+        divContent.className = 'card-body';
+        divCard.appendChild(divContent)
+
+        const cardTitle = document.createElement('h5')
+        cardTitle.className = 'card-title';
+        cardTitle.innerText = item.name;
+        divContent.appendChild(cardTitle)
+
+        const cardDesp = document.createElement('p')
+        cardDesp.className = 'card-text';
+        cardDesp.innerText = item.desp;
+        divContent.appendChild(cardDesp)
+
+        const cardA = document.createElement('a')
+        cardA.classList = 'btn btn-primary';
+        cardA.style.border = 'none';
+        cardA.href = '#';
+        cardA.innerText = "Ver mas";
+        divContent.appendChild(cardA)
+        
+        return divCard;
+    })
+
+    divContainer.append(...cards)
+    main.appendChild(divContainer)
+    
+    
 })
 
 onplaces9.addEventListener("click",()=>{
-    minaClavero();
+    console.log("Ejecutando mina clavero")
+    main.innerHTML = " "
+    const divContainer = document.createElement('div')
+    divContainer.style.display = 'flex';
+    divContainer.style.marginTop = '20px';
+    divContainer.style.justifyContent = 'center';
+    divContainer.style.gap = '15px';
+
+
+
+    // Ejecucion de div y Cards
+    
+    const cards = placesclavero.map(item => {
+        const divCard = document.createElement('div');
+        divCard.className = 'card';
+        divCard.style.height = '370px';
+        divCard.style.width = '18rem';
+        divCard.style.backgroundColor = '#FFFFFF';
+        divCard.style.borderRadius = '15px';
+        
+        const img = document.createElement('img');
+        img.setAttribute("loading", "lazy");
+        img.borderRadius = '10px';
+        img.src = item.img_1;
+        divCard.appendChild(img);
+
+        const divContent = document.createElement('div')
+        divContent.className = 'card-body';
+        divCard.appendChild(divContent)
+
+        const cardTitle = document.createElement('h5')
+        cardTitle.className = 'card-title';
+        cardTitle.innerText = item.name;
+        divContent.appendChild(cardTitle)
+
+        const cardDesp = document.createElement('p')
+        cardDesp.className = 'card-text';
+        cardDesp.innerText = item.desp;
+        divContent.appendChild(cardDesp)
+
+        const cardA = document.createElement('a')
+        cardA.classList = 'btn btn-primary';
+        cardA.style.border = 'none';
+        cardA.href = '#';
+        cardA.innerText = "Ver mas";
+        divContent.appendChild(cardA)
+        
+        return divCard;
+    })
+
+    divContainer.append(...cards)
+    main.appendChild(divContainer)
+    
+    
 })
 
 onplaces10.addEventListener("click",()=>{
-    brochero();
+    console.log("Ejecutando brochero")
+    main.innerHTML = " "
+    const divContainer = document.createElement('div')
+    divContainer.style.display = 'flex';
+    divContainer.style.marginTop = '20px';
+    divContainer.style.justifyContent = 'center';
+    divContainer.style.gap = '15px';
+
+
+
+    // Ejecucion de div y Cards
+    
+    const cards = placesbrochero.map(item => {
+        const divCard = document.createElement('div');
+        divCard.className = 'card';
+        divCard.style.height = '370px';
+        divCard.style.width = '18rem';
+        divCard.style.backgroundColor = '#FFFFFF';
+        divCard.style.borderRadius = '15px';
+        
+        const img = document.createElement('img');
+        img.setAttribute("loading", "lazy");
+        img.borderRadius = '10px';
+        img.src = item.img_1;
+        divCard.appendChild(img);
+
+        const divContent = document.createElement('div')
+        divContent.className = 'card-body';
+        divCard.appendChild(divContent)
+
+        const cardTitle = document.createElement('h5')
+        cardTitle.className = 'card-title';
+        cardTitle.innerText = item.name;
+        divContent.appendChild(cardTitle)
+
+        const cardDesp = document.createElement('p')
+        cardDesp.className = 'card-text';
+        cardDesp.innerText = item.desp;
+        divContent.appendChild(cardDesp)
+
+        const cardA = document.createElement('a')
+        cardA.classList = 'btn btn-primary';
+        cardA.style.border = 'none';
+        cardA.href = '#';
+        cardA.innerText = "Ver mas";
+        divContent.appendChild(cardA)
+        
+        return divCard;
+    })
+
+    divContainer.append(...cards)
+    main.appendChild(divContainer)
+    
+    
 })
 
