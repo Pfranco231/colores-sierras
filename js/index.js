@@ -45,6 +45,7 @@ onplaces1.addEventListener("click",()=>{
         
         const img = document.createElement('img');
         img.setAttribute("loading", "lazy");
+        img.className = 'card-img-top';
         img.borderRadius = '10px';
         img.src = item.img_1;
         divCard.appendChild(img);
@@ -57,11 +58,6 @@ onplaces1.addEventListener("click",()=>{
         cardTitle.className = 'card-title';
         cardTitle.innerText = item.name;
         divContent.appendChild(cardTitle)
-
-        const cardDesp = document.createElement('p')
-        cardDesp.className = 'card-text';
-        cardDesp.innerText = item.desp;
-        divContent.appendChild(cardDesp)
 
         const cardA = document.createElement('a')
         cardA.classList = 'btn btn-primary';
@@ -100,6 +96,7 @@ onplaces2.addEventListener("click",()=>{
         
         const img = document.createElement('img');
         img.setAttribute("loading", "lazy");
+        img.className = 'card-img-top';
         img.borderRadius = '10px';
         img.src = item.img_1;
         divCard.appendChild(img);
@@ -112,11 +109,6 @@ onplaces2.addEventListener("click",()=>{
         cardTitle.className = 'card-title';
         cardTitle.innerText = item.name;
         divContent.appendChild(cardTitle)
-
-        const cardDesp = document.createElement('p')
-        cardDesp.className = 'card-text';
-        cardDesp.innerText = item.desp;
-        divContent.appendChild(cardDesp)
 
         const cardA = document.createElement('a')
         cardA.classList = 'btn btn-primary';
@@ -156,6 +148,7 @@ onplaces3.addEventListener("click",()=>{
         
         const img = document.createElement('img');
         img.setAttribute("loading", "lazy");
+        img.className = 'card-img-top';
         img.borderRadius = '10px';
         img.src = item.img_1;
         divCard.appendChild(img);
@@ -168,11 +161,6 @@ onplaces3.addEventListener("click",()=>{
         cardTitle.className = 'card-title';
         cardTitle.innerText = item.name;
         divContent.appendChild(cardTitle)
-
-        const cardDesp = document.createElement('p')
-        cardDesp.className = 'card-text';
-        cardDesp.innerText = item.desp;
-        divContent.appendChild(cardDesp)
 
         const cardA = document.createElement('a')
         cardA.classList = 'btn btn-primary';
@@ -213,6 +201,7 @@ onplaces4.addEventListener("click",()=>{
         
         const img = document.createElement('img');
         img.setAttribute("loading", "lazy");
+        img.className = 'card-img-top';
         img.borderRadius = '10px';
         img.src = item.img_1;
         divCard.appendChild(img);
@@ -225,11 +214,6 @@ onplaces4.addEventListener("click",()=>{
         cardTitle.className = 'card-title';
         cardTitle.innerText = item.name;
         divContent.appendChild(cardTitle)
-
-        const cardDesp = document.createElement('p')
-        cardDesp.className = 'card-text';
-        cardDesp.innerText = item.desp;
-        divContent.appendChild(cardDesp)
 
         const cardA = document.createElement('a')
         cardA.classList = 'btn btn-primary';
@@ -270,6 +254,7 @@ onplaces5.addEventListener("click",()=>{
         
         const img = document.createElement('img');
         img.setAttribute("loading", "lazy");
+        img.className = 'card-img-top';
         img.borderRadius = '10px';
         img.src = item.img_1;
         divCard.appendChild(img);
@@ -282,11 +267,6 @@ onplaces5.addEventListener("click",()=>{
         cardTitle.className = 'card-title';
         cardTitle.innerText = item.name;
         divContent.appendChild(cardTitle)
-
-        const cardDesp = document.createElement('p')
-        cardDesp.className = 'card-text';
-        cardDesp.innerText = item.desp;
-        divContent.appendChild(cardDesp)
 
         const cardA = document.createElement('a')
         cardA.classList = 'btn btn-primary';
@@ -327,6 +307,7 @@ onplaces6.addEventListener("click",()=>{
         
         const img = document.createElement('img');
         img.setAttribute("loading", "lazy");
+        img.className = 'card-img-top';
         img.borderRadius = '10px';
         img.src = item.img_1;
         divCard.appendChild(img);
@@ -339,11 +320,6 @@ onplaces6.addEventListener("click",()=>{
         cardTitle.className = 'card-title';
         cardTitle.innerText = item.name;
         divContent.appendChild(cardTitle)
-
-        const cardDesp = document.createElement('p')
-        cardDesp.className = 'card-text';
-        cardDesp.innerText = item.desp;
-        divContent.appendChild(cardDesp)
 
         const cardA = document.createElement('a')
         cardA.classList = 'btn btn-primary';
@@ -384,6 +360,7 @@ onplaces7.addEventListener("click",()=>{
         
         const img = document.createElement('img');
         img.setAttribute("loading", "lazy");
+        img.className = 'card-img-top';
         img.borderRadius = '10px';
         img.src = item.img_1;
         divCard.appendChild(img);
@@ -396,11 +373,6 @@ onplaces7.addEventListener("click",()=>{
         cardTitle.className = 'card-title';
         cardTitle.innerText = item.name;
         divContent.appendChild(cardTitle)
-
-        const cardDesp = document.createElement('p')
-        cardDesp.className = 'card-text';
-        cardDesp.innerText = item.desp;
-        divContent.appendChild(cardDesp)
 
         const cardA = document.createElement('a')
         cardA.classList = 'btn btn-primary';
@@ -441,6 +413,7 @@ onplaces8.addEventListener("click",()=>{
         
         const img = document.createElement('img');
         img.setAttribute("loading", "lazy");
+        img.className = 'card-img-top';
         img.borderRadius = '10px';
         img.src = item.img_1;
         divCard.appendChild(img);
@@ -453,11 +426,6 @@ onplaces8.addEventListener("click",()=>{
         cardTitle.className = 'card-title';
         cardTitle.innerText = item.name;
         divContent.appendChild(cardTitle)
-
-        const cardDesp = document.createElement('p')
-        cardDesp.className = 'card-text';
-        cardDesp.innerText = item.desp;
-        divContent.appendChild(cardDesp)
 
         const cardA = document.createElement('a')
         cardA.classList = 'btn btn-primary';
@@ -498,6 +466,7 @@ onplaces9.addEventListener("click",()=>{
         
         const img = document.createElement('img');
         img.setAttribute("loading", "lazy");
+        img.className = 'card-img-top';
         img.borderRadius = '10px';
         img.src = item.img_1;
         divCard.appendChild(img);
@@ -510,11 +479,6 @@ onplaces9.addEventListener("click",()=>{
         cardTitle.className = 'card-title';
         cardTitle.innerText = item.name;
         divContent.appendChild(cardTitle)
-
-        const cardDesp = document.createElement('p')
-        cardDesp.className = 'card-text';
-        cardDesp.innerText = item.desp;
-        divContent.appendChild(cardDesp)
 
         const cardA = document.createElement('a')
         cardA.classList = 'btn btn-primary';
@@ -555,6 +519,7 @@ onplaces10.addEventListener("click",()=>{
         
         const img = document.createElement('img');
         img.setAttribute("loading", "lazy");
+        img.className = 'card-img-top';
         img.borderRadius = '10px';
         img.src = item.img_1;
         divCard.appendChild(img);
@@ -567,11 +532,6 @@ onplaces10.addEventListener("click",()=>{
         cardTitle.className = 'card-title';
         cardTitle.innerText = item.name;
         divContent.appendChild(cardTitle)
-
-        const cardDesp = document.createElement('p')
-        cardDesp.className = 'card-text';
-        cardDesp.innerText = item.desp;
-        divContent.appendChild(cardDesp)
 
         const cardA = document.createElement('a')
         cardA.classList = 'btn btn-primary';
