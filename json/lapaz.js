@@ -24,7 +24,7 @@ const placeslapaz = [
         img_1: "../imgs/turisticos/la-paz/3/los-mellizos-copa.jpg",
         img_2: "../imgs/turisticos/la-paz/3/los-mellizos-resenia.jpg",
         img_3: "../imgs/turisticos/la-paz/3/los-mellizos-tronco.jpg",
-        location: "etc",
+        location: "https://www.google.com/maps/search/?api=1&query=-32.217441,-65.048378",
     },
 ];
 
