@@ -29,6 +29,7 @@ onplaces1.addEventListener("click",()=>{
     divContainer.style.display = 'flex';
     divContainer.style.marginTop = '20px';
     divContainer.style.justifyContent = 'center';
+    divContainer.style.flexWrap = 'wrap';
     divContainer.style.gap = '15px';
 
 
@@ -80,6 +81,7 @@ onplaces2.addEventListener("click",()=>{
     divContainer.style.display = 'flex';
     divContainer.style.marginTop = '20px';
     divContainer.style.justifyContent = 'center';
+    divContainer.style.flexWrap = 'wrap';
     divContainer.style.gap = '15px';
 
 
@@ -132,6 +134,7 @@ onplaces3.addEventListener("click",()=>{
     divContainer.style.display = 'flex';
     divContainer.style.marginTop = '20px';
     divContainer.style.justifyContent = 'center';
+    divContainer.style.flexWrap = 'wrap';
     divContainer.style.gap = '15px';
 
 
@@ -185,6 +188,7 @@ onplaces4.addEventListener("click",()=>{
     divContainer.style.display = 'flex';
     divContainer.style.marginTop = '20px';
     divContainer.style.justifyContent = 'center';
+    divContainer.style.flexWrap = 'wrap';
     divContainer.style.gap = '15px';
 
 
@@ -238,6 +242,7 @@ onplaces5.addEventListener("click",()=>{
     divContainer.style.display = 'flex';
     divContainer.style.marginTop = '20px';
     divContainer.style.justifyContent = 'center';
+    divContainer.style.flexWrap = 'wrap';
     divContainer.style.gap = '15px';
 
 
@@ -291,6 +296,7 @@ onplaces6.addEventListener("click",()=>{
     divContainer.style.display = 'flex';
     divContainer.style.marginTop = '20px';
     divContainer.style.justifyContent = 'center';
+    divContainer.style.flexWrap = 'wrap';
     divContainer.style.gap = '15px';
 
 
@@ -344,6 +350,7 @@ onplaces7.addEventListener("click",()=>{
     divContainer.style.display = 'flex';
     divContainer.style.marginTop = '20px';
     divContainer.style.justifyContent = 'center';
+    divContainer.style.flexWrap = 'wrap';
     divContainer.style.gap = '15px';
 
 
@@ -397,6 +404,7 @@ onplaces8.addEventListener("click",()=>{
     divContainer.style.display = 'flex';
     divContainer.style.marginTop = '20px';
     divContainer.style.justifyContent = 'center';
+    divContainer.style.flexWrap = 'wrap';
     divContainer.style.gap = '15px';
 
 
@@ -450,6 +458,7 @@ onplaces9.addEventListener("click",()=>{
     divContainer.style.display = 'flex';
     divContainer.style.marginTop = '20px';
     divContainer.style.justifyContent = 'center';
+    divContainer.style.flexWrap = 'wrap';
     divContainer.style.gap = '15px';
 
 
@@ -503,6 +512,7 @@ onplaces10.addEventListener("click",()=>{
     divContainer.style.display = 'flex';
     divContainer.style.marginTop = '20px';
     divContainer.style.justifyContent = 'center';
+    divContainer.style.flexWrap = 'wrap';
     divContainer.style.gap = '15px';
 
 
